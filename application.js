@@ -22,7 +22,3 @@ $(document).ready(function() {
     $('.tour').filter('.featured').addClass('highlight');
   });
 });
-
-$( "li:last" ).removeClass(function() {
-  return $( this ).prev().attr( "class" );
-});
