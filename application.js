@@ -1,3 +1,5 @@
+// grabbing relative prices as assigned in he 'data' tags of the HTML
+
 $(document).ready(function() {
   $('button').on('click', function() {
     var tour = $(this).closest('.tour');
