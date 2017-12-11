@@ -13,12 +13,16 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   $('#filters').on('click', '.on-sale', function() {
-    $('.highlight').removeClass();
+    $('.highlight').removeClass('highlight');
     $('.tour').filter('.on-sale').addClass('highlight');
   });
 
   $('#filters').on('click', '.featured', function() {
-    $('.highlight').removeClass();
+    $('.highlight').removeClass('highlight');
     $('.tour').filter('.featured').addClass('highlight');
   });
+});
+
+$( "li:last" ).removeClass(function() {
+  return $( this ).prev().attr( "class" );
 });
