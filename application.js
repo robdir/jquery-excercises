@@ -9,3 +9,9 @@ $(document).ready(function() {
     // $(this).remove();
   });
 });
+
+$(document).ready(function() {
+  $('button').on('click', function() {
+
+  });
+});
