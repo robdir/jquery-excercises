@@ -23,3 +23,10 @@ $(document).ready(function() {
     $('.tour').filter('.featured').addClass('highlight');
   });
 });
+
+$(document).ready(function(){
+  $('.count').on('click', function() {
+	 var count = $( ".tour" ).length;
+	 window.alert("There are " + count + " tours");
+ });
+});
