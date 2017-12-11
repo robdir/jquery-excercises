@@ -1,4 +1,4 @@
-// grabbing relative prices as assigned in he 'data' tags of the HTML
+// grabbing relative prices as assigned in the 'data' tags of the HTML
 
 $(document).ready(function() {
   $('.tour').on('click','button', function() {
@@ -11,6 +11,7 @@ $(document).ready(function() {
   });
 });
 
+// filtering different tour items based on class names (onclick)
 $(document).ready(function() {
   $('#filters').on('click', '.on-sale', function() {
     $('.highlight').removeClass('highlight');
