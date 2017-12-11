@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+  margin: 0;
+  background: WhiteSmoke;
+  min-width: 960px;
+}
+
+.usa, .europe, .asia {
+  border: 2px Black solid;
+  max-width: 25%;
+  max-height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  background: #2222;
+}
+
+#tours h1 {
+  text-align: center;
+}
+
+#buttons {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+</style>
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="application.js"></script>
+</body>
+<html>
+
+<div id="tours">
+  <h1>Guided Tours</h1>
+  <ul>
+    <li class="usa tour" data-discount="299">
+      <h2>New York, New York</h2>
+      <span class="details">$1,899 for 7 nights</span>
+      <br>
+      <button class="book">Book Now</button>
+    </li>
+    <li class="europe tour" data-discount="176">
+      <h2>Paris, France</h2>
+      <span class="details">$2,299 for 7 nights</span>
+      <br>
+      <button class="book">Book Now</button>
+    </li>
+    <li class="asia tour" data-discount="349">
+      <h2>Tokyo, Japan</h2>
+      <span class="details">$3,799 for 7 nights</span>
+      <br>
+      <button class="book">Book Now</button>
+    </li>
+  </ul>
+</div>
+</html>
