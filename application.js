@@ -12,8 +12,13 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  $('#filters').on('click', '.on-sale', function(){
-    var el = $('.tour').filter('.on-sale');
-    el.addClass('highlight');
+  $('#filters').on('click', '.on-sale', function() {
+    $('.highlight').removeClass();
+    $('.tour').filter('.on-sale').addClass('highlight');
+  });
+
+  $('#filters').on('click', '.featured', function() {
+    $('.highlight').removeClass();
+    $('.tour').filter('.featured').addClass('highlight');
   });
 });
