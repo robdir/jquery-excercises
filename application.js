@@ -11,7 +11,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  $('button').on('click', function() {
-
+  $('#filters').on('click', '.on-sale', function(){
+    
   });
 });
