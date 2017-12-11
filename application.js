@@ -6,6 +6,6 @@ $(document).ready(function() {
     var discount = tour.data('discount');
     var message = $('<span>Call 1-555-jquery-air for a $' + discount + ' discount.</span>');
     tour.append(message);
-    $(this).remove();
+    // $(this).remove();
   });
 });
