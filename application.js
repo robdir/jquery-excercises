@@ -24,9 +24,17 @@ $(document).ready(function() {
   });
 });
 
+// logging using .length
 $(document).ready(function(){
   $('.count').on('click', function() {
 	 var count = $( ".tour" ).length;
 	 window.alert("There are " + count + " tours");
  });
+});
+
+// showing/hiding any element of the page with slideToggle()
+$(document).ready(function() {
+  $(".slide").on('click', function() {
+  $('.current').slideToggle();
+});
 });
