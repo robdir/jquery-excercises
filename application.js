@@ -49,9 +49,12 @@ $(document).ready(function() {
 //   });
 // });
 // grabbing user input
+
 $(document).ready(function() {
   $('#nights').on('keyup', function() {
-    var input = $(this).val();
-    $('#nights-count').text(input);
+    var nights = +$(this).val();
+    $('#nights-count').text(nights);
+    var price = +$(this).closest('.tour').data('daily-price');
+    $('#total').text(price * nights);
   });
 });
