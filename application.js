@@ -48,3 +48,10 @@ $(document).ready(function() {
 //     $('#current').slideUp();
 //   });
 // });
+// grabbing user input
+$(document).ready(function() {
+  $('#nights').on('keyup', function() {
+    var input = $(this).val();
+    $('#nights-count').text(input);
+  });
+});
