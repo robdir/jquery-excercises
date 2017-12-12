@@ -38,3 +38,14 @@ $(document).ready(function() {
   $('.current').slideToggle();
 });
 });
+
+
+
+$(document).ready(function() {
+  function showPhotos() {
+ 	$(this).find('li').slideToggle();
+ }
+
+  $('#tours').on('mouseenter', 'ul', showPhotos);
+  $('#tours').on('mouseleave', 'ul', showPhotos);
+});
