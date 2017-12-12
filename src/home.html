@@ -18,6 +18,8 @@ html {
   margin-top: 25px;
   background: #2222;
   text-align: center;
+  -webkit-transition: top 0.2s;
+  transition: top 0.2s;
 }
 
 .highlight {
@@ -25,7 +27,8 @@ html {
 }
 
 .highlighted {
-  background-color: blue;
+  background-color: #3a6d9f;
+  top: -10px;
 }
 
 #tours h1 {
@@ -62,7 +65,9 @@ ul {
 <html>
 
 <div id="tours">
+  <div id='title'>
   <h1>Guided Tours</h1>
+  </div>
   <ul id="filters">
     <li><button class="on-sale">On Sale</button></li>
     <li><button class="featured">Featured</button></li> <br>
@@ -79,6 +84,7 @@ ul {
           <ul class="photos">
            <li>
              <img src="img/CB.jpg">
+             <br>
              <span>Chrysler building</span>
            </li>
          </ul>
@@ -91,6 +97,7 @@ ul {
           <ul class="photos">
            <li>
              <img src="img/ET.jpeg">
+             <br>
              <span>Eiffel Tower</span>
            </li>
          </ul>
@@ -103,6 +110,7 @@ ul {
           <ul class="photos">
            <li>
              <img src="img/T.jpeg">
+             <br>
              <span>Metropolitan Gov't Building</span>
            </li>
          </ul>

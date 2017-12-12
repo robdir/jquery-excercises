@@ -70,14 +70,15 @@ $(document).ready(function() {
   });
 });
 
-// applying CSS thru jquery and hiding/showing related photos
+// applying CSS via classes thru jquery and hiding/showing related photos
 $(document).ready(function() {
   $('.tour').on('mouseenter', function() {
     $(this).toggleClass('highlighted');
-    $(this).closest('.tour').find('.photos').show();
+    $(this).find('.per-night').animate({'opacity': '1'});
+    // $(this).closest('.tour').find('.photos').show();
   });
   $('.tour').on('mouseleave', function() {
     $(this).toggleClass('highlighted');
-    $(this).closest('.tour').find('.photos').hide();
+    // $(this).closest('.tour').find('.photos').hide();
   });
 });
