@@ -70,11 +70,14 @@ $(document).ready(function() {
   });
 });
 
+// applying CSS thru jquery and hiding/showing related photos
 $(document).ready(function() {
   $('.tour').on('mouseenter', function() {
-    $(this).css({'background-color': '#252b30', 'font-weight': 'bold'});
+    $(this).css({'background-color': 'blue', 'font-weight': 'bold'});
+    $(this).closest('.tour').find('.photos').show();
   });
   $('.tour').on('mouseleave', function() {
     $(this).css({'background-color': '#2222'});
+    $(this).closest('.tour').find('.photos').hide();
   });
 });
