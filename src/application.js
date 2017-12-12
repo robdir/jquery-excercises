@@ -73,11 +73,11 @@ $(document).ready(function() {
 // applying CSS thru jquery and hiding/showing related photos
 $(document).ready(function() {
   $('.tour').on('mouseenter', function() {
-    $(this).css({'background-color': 'blue', 'font-weight': 'bold'});
+    $(this).toggleClass('highlighted');
     $(this).closest('.tour').find('.photos').show();
   });
   $('.tour').on('mouseleave', function() {
-    $(this).css({'background-color': '#2222'});
+    $(this).toggleClass('highlighted');
     $(this).closest('.tour').find('.photos').hide();
   });
 });
