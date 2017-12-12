@@ -74,4 +74,7 @@ $(document).ready(function() {
   $('.tour').on('mouseenter', function() {
     $(this).css({'background-color': '#252b30', 'font-weight': 'bold'});
   });
+  $('.tour').on('mouseleave', function() {
+    $(this).css({'background-color': '#2222'});
+  });
 });
