@@ -61,3 +61,11 @@ $(document).ready(function() {
     $(this).val(7);
 });
 });
+
+// slide for photos
+$(document).ready(function() {
+  $('.see-photos').on('click', function(event) {
+    event.preventDefault();
+    $(this).closest('.tour').find('.photos').slideToggle();
+  });
+});
