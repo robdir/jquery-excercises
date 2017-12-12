@@ -41,7 +41,10 @@ $(document).ready(function() {
 
 // same but with mouse listeners
 $(document).ready(function() {
-  $('#tours').on('mouseenter', 'ul', function(){
-    $('#current').slideToggle();
+  $('#list').on('mouseenter', 'ul', function(){
+    $('#current').slideDown();
+  });
+  $('#list').on('mouseleave', 'ul', function(){
+    $('#current').slideUp();
   });
 });
