@@ -53,8 +53,11 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('#nights').on('keyup', function() {
     var nights = +$(this).val();
-    $('#nights-count').text(nights);
     var price = +$(this).closest('.tour').data('daily-price');
+    $('#nights-count').text(nights);
     $('#total').text(price * nights);
   });
+    $('#nights').on('focus', function(){
+    $(this).val(7);
+});
 });
