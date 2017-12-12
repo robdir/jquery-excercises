@@ -40,11 +40,11 @@ $(document).ready(function() {
 });
 
 // same but with mouse listeners
-$(document).ready(function() {
-  $('#list').on('mouseenter', 'ul', function(){
-    $('#current').slideDown();
-  });
-  $('#list').on('mouseleave', 'ul', function(){
-    $('#current').slideUp();
-  });
-});
+// $(document).ready(function() {
+//   $('#list').on('mouseenter', 'ul', function(){
+//     $('#current').slideDown();
+//   });
+//   $('#list').on('mouseleave', 'ul', function(){
+//     $('#current').slideUp();
+//   });
+// });
