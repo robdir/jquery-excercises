@@ -35,17 +35,16 @@ $(document).ready(function(){
 // showing/hiding any element of the page with slideToggle()
 $(document).ready(function() {
   $(".slide").on('click', function() {
-  $('.current').slideToggle();
+  $('#current').slideToggle();
 });
 });
-
-
 
 $(document).ready(function() {
-  function showPhotos() {
- 	$(this).find('li').slideToggle();
- }
-
-  $('#tours').on('mouseenter', 'ul', showPhotos);
-  $('#tours').on('mouseleave', 'ul', showPhotos);
+ //  function showPhotos() {
+ // 	$(this).find('.tour').slideToggle();
+ // }
+  $('#tours').on('mouseenter', 'ul', function(){
+    $('#current').slideToggle();
+  });
+  // $('#tours').on('mouseleave', 'ul', showPhotos);
 });
