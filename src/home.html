@@ -33,11 +33,24 @@ html {
   text-align: center;
 }
 
+.photos {
+  display: none;
+}
+
 ul {
   list-style: none;
 }
 
 </style>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <title>jQuery fun!</title>
+</head>
+
+
 <body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="application.js"></script>
@@ -58,16 +71,37 @@ ul {
         <h2>New York, New York</h2>
         <span class="details">$1,899 for 7 nights</span>
         <button class="book">Book Now</button> <br>
+        <a href="#" class="see-photos">See Photos</a>
+          <ul class="photos">
+           <li>
+             <img src="/img/CB.jpg">
+             <span>Chrysler building</span>
+           </li>
+         </ul>
       </li>
       <li class="europe tour on-sale" data-discount="176">
         <h2>Paris, France</h2>
         <span class="details">$2,299 for 7 nights</span>
         <button class="book">Book Now</button> <br>
+        <a href="#" class="see-photos">See Photos</a>
+          <ul class="photos">
+           <li>
+             <img src="/img/ET.jpg">
+             <span>Eiffel Tower</span>
+           </li>
+         </ul>
       </li>
       <li class="asia tour featured" data-discount="349">
         <h2>Tokyo, Japan</h2>
         <span class="details">$3,799 for 7 nights</span>
         <button class="book">Book Now</button> <br>
+        <a href="#" class="see-photos">See Photos</a>
+          <ul class="photos">
+           <li>
+             <img src="/img/T.jpg">
+             <span>Metropolitan Gov't Building</span>
+           </li>
+         </ul>
       </li>
       <li class="europe tour featured" data-daily-price="357">
       <h2>Paris, France Tour</h2>
