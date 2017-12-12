@@ -35,16 +35,13 @@ $(document).ready(function(){
 // showing/hiding any element of the page with slideToggle()
 $(document).ready(function() {
   $(".slide").on('click', function() {
-  $('#current').slideToggle();
-});
+    $('#current').slideToggle();
+  });
 });
 
+// same but with mouse listeners
 $(document).ready(function() {
- //  function showPhotos() {
- // 	$(this).find('.tour').slideToggle();
- // }
   $('#tours').on('mouseenter', 'ul', function(){
     $('#current').slideToggle();
   });
-  // $('#tours').on('mouseleave', 'ul', showPhotos);
 });
