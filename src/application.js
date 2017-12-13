@@ -76,11 +76,7 @@ $(document).ready(function() {
 
 $(document).ready(function () {
   $('#color').change(function(){
-    var color = $('#color option:selected').val();
-    $('html').css({'background-color': color})
+    var value = $('#color option:selected').val();
+    $('html').css({'background-color': value})
   });
-});
-
-$('select :selected').change(function(){
-    $("#dropdown1 option:selected").val();
 });
