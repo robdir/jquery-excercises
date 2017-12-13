@@ -74,9 +74,26 @@ $(document).ready(function() {
   });
 });
 
+// random color generator
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+// colors yay!
 $(document).ready(function () {
   $('#color').change(function(){
     var value = $('#color option:selected').val();
-    $('html').css({'background-color': value})
+    var random = getRandomColor();
+    if (value === 'random') {
+      $('html').css({'background-color': random})
+    }
+    else {
+      $('html').css({'background-color': value})
+    }
   });
 });
