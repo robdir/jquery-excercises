@@ -2,6 +2,11 @@
 <meta charset="utf-8">
 <style>
 
+// css custom variable
+:root {
+  --main-color: #2222;
+}
+
 html {
   margin: 0;
   background: WhiteSmoke;
@@ -11,12 +16,12 @@ html {
 
 .usa, .europe, .asia{
   border: 2px Black solid;
-  max-width: 20%;
+  max-width: 25%;
   max-height: 50%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 25px;
-  background: #2222;
+  background: var(--main-color);
   text-align: center;
 }
 
@@ -26,6 +31,11 @@ html {
 
 .highlighted {
   background-color: #3a6d9f;
+}
+
+#tours {
+  display: flex;
+  flex-direction: column;
 }
 
 #tours h1 {

@@ -39,17 +39,7 @@ $(document).ready(function() {
   });
 });
 
-// same but with mouse listeners
-// $(document).ready(function() {
-//   $('#list').on('mouseenter', 'ul', function(){
-//     $('#current').slideDown();
-//   });
-//   $('#list').on('mouseleave', 'ul', function(){
-//     $('#current').slideUp();
-//   });
-// });
-// grabbing user input
-
+// grabbing user input via keypress
 $(document).ready(function() {
   $('#nights').on('keyup', function() {
     var nights = +$(this).val();
