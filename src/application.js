@@ -74,11 +74,21 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('.tour').on('mouseenter', function() {
     $(this).toggleClass('highlighted');
-    $(this).find('.per-night').animate({'opacity': '1'});
-    // $(this).closest('.tour').find('.photos').show();
+    $(this).find('.per-night').animate({'top': '-14px', 'opacity': '1'}, 'fast');
+    $(this).closest('.tour').find('.photos').show();
   });
   $('.tour').on('mouseleave', function() {
     $(this).toggleClass('highlighted');
-    // $(this).closest('.tour').find('.photos').hide();
+    $(this).find('.per-night').animate({'top': '0px', 'opacity': '0'}, 'fast');
+    $(this).closest('.tour').find('.photos').hide();
   });
+});
+
+
+$(document).ready(function(){
+  $( ".tour" ).click(function() {
+  $(this).animate({ top: '-15px', left: "+=50"}, 'fast', function() {
+    // Animation complete.
+  });
+});
 });
