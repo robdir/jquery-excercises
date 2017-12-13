@@ -73,3 +73,14 @@ $(document).ready(function() {
     $(this).closest('.tour').find('.photos').hide();
   });
 });
+
+$(document).ready(function () {
+  $('#color').change(function(){
+    var color = $('#color option:selected').val();
+    $('html').css({'background-color': color})
+  });
+});
+
+$('select :selected').change(function(){
+    $("#dropdown1 option:selected").val();
+});

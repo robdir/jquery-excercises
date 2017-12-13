@@ -1,73 +1,12 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<style>
 
-// css custom variable
-:root {
-  --main-color: #2222;
-}
-
-html {
-  margin: 0;
-  background: WhiteSmoke;
-  min-width: 960px;
-  text-align: center;
-}
-
-.usa, .europe, .asia{
-  border: 2px Black solid;
-  max-width: 25%;
-  max-height: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 25px;
-  background: var(--main-color);
-  text-align: center;
-}
-
-.highlight {
-  background: blue;
-}
-
-.highlighted {
-  background-color: #3a6d9f;
-}
-
-#tours {
-  display: flex;
-  flex-direction: column;
-}
-
-#tours h1 {
-  text-align: center;
-}
-
-#filters li {
-  display: block;
-  text-align: center;
-}
-
-.photos {
-  display: none;
-}
-
-#tours ul li .per-night {
-    opacity: 0;
-    position: relative;
-    top: 0px;
-    right: -13px;
-}
-
-ul {
-  list-style: none;
-}
-
-</style>
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" type="text/css" href="styles.css">
   <title>jQuery fun!</title>
 </head>
 
@@ -77,6 +16,15 @@ ul {
   <script src="application.js"></script>
 </body>
 <html>
+<div id="dropdown">
+  <h3> Choose a background colour </h3>
+  <select name='background' id="color">
+    <option value='blue'>Blue</option>
+    <option value='orange'>Orange</option>
+    <option value='green'>Green</option>
+    <option value='random'>Random</option>
+  </select>
+</div>
 
 <div id="tours">
   <div id='title'>
