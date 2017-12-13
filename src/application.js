@@ -83,12 +83,3 @@ $(document).ready(function() {
     $(this).closest('.tour').find('.photos').hide();
   });
 });
-
-
-$(document).ready(function(){
-  $( ".tour" ).click(function() {
-  $(this).animate({ top: '-15px', left: "+=50"}, 'fast', function() {
-    // Animation complete.
-  });
-});
-});
