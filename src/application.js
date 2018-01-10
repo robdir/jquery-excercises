@@ -92,10 +92,12 @@ $(document).ready(function () {
     if (value === 'random') {
       $('html').css({'background-color': random})
       $('#tours').css({'background-color': random});
+      $('#highlighted').css({'background-color': random});
     }
     else {
       $('html').css({'background-color': value})
       $('#tours').css({'background-color': value});
+      $('#highlighted').css({'background-color': value});
     }
   });
 });
