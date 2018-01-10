@@ -1,5 +1,5 @@
 
-// css custom variable
+/* css custom variable */
 :root {
   --main-color: #2222;
 }
@@ -63,4 +63,9 @@ html {
 
 ul {
   list-style: none;
+}
+
+img {
+  height: fit-content;
+  width: fit-content;
 }
