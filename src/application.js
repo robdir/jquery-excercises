@@ -90,10 +90,12 @@ $(document).ready(function () {
     var value = $('#color option:selected').val();
     var random = getRandomColor();
     if (value === 'random') {
-      $('html', '#tours').css({'background-color': random})
+      $('html').css({'background-color': random})
+      $('#tours').css({'background-color': random});
     }
     else {
-      $('html', '#tours').css({'background-color': value})
+      $('html').css({'background-color': value})
+      $('#tours').css({'background-color': value});
     }
   });
 });
